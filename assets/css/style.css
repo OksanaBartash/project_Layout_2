@@ -1,0 +1,693 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Sen;
+    src: url(../fonts/Sen-VariableFont_wght.ttf);
+}
+
+:root {
+    --bg_light: #fff;
+    --bg_dark: #000000;
+    --bg_dark-braun: #584125;
+    --bg_light-braun: #C98A40;
+    --bg_button: #FDBA10;
+    --bg_input: #FFD39F;
+    --text_light: #fff;
+    --text_dark: #333333;
+    --text_dark-braun: #584125;
+    --text_braun: #C98A40;
+    --for_form: #CDCDCD;
+}
+
+* {
+    user-select: none;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text_braun);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.2rem;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    text-align: start;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.limit-size {
+    max-width: 1140px;
+}
+
+
+
+/*-------------- button --------------*/
+.button {
+    width: 220px;
+    height: 60px;
+    border-radius: 32px;
+    border: 0px;
+    background-color: var(--bg_button);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text_light);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.button:hover,
+.button:active {
+    background-color: var(--bg_dark-braun);
+    border: 0px;
+}
+
+
+
+
+/*================= mobile version ====================*/
+/* --------- intro --------- */
+
+#intro {
+    padding: 16px;
+    margin: 0 auto;
+    background: var(--bg_dark-braun);
+    color: var(--text_light);
+    text-align: center;
+}
+
+#intro .logo img {
+    width: 150px;
+    margin: 0 auto 90px auto;
+}
+
+#intro .container .text p {
+    max-width: 552px;
+    margin: 20px auto 40px auto;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+#intro .container .text .button {
+    margin: 0 0 90px 0;
+}
+
+#intro .container .text .button:hover,
+#intro .container .text .button:active {
+    background-color: var(--bg_input);
+    color: var(--bg_dark);
+    font-weight: 600;
+    border: 0px;
+}
+
+#intro .container .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .container .text .linksSwiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px auto 40px auto;
+}
+
+#intro .container .text .linksSwiper .swiper-wrapper {
+    width: 100px;
+}
+
+#intro .container .text .linksSwiper .swiper-wrapper .swiper-slide {
+    margin: 0 0 0 10px;
+    width: 50px !important;
+}
+
+#intro .container .text .linksSwiper .swiper-wrapper .swiper-slide a {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 2rem;
+}
+
+#intro .container .text .linksSwiper .swiper-wrapper .swiper-slide a:hover,
+#intro .container .text .linksSwiper .swiper-wrapper .swiper-slide a:active {
+    background-color: var(--bg_input);
+    border-radius: 5px;
+}
+
+#intro .container .social-contacts .phone p {
+    font-size: 1.2rem;
+}
+
+#intro .container .image img {
+    max-width: 666px;
+    width: 100%;
+}
+
+
+/* --------- hoWWeWork --------- */
+
+#hoWWeWork {
+    background-image: url(/assets/img/how-work_tasty-bg_left.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 16px;
+    text-align: center;
+}
+
+#hoWWeWork .text p {
+    max-width: 270px;
+    margin: 20px auto;
+}
+
+#hoWWeWork .button {
+    margin: 40px 0;
+}
+
+
+/* --------- aboutUs --------- */
+
+#aboutUs {
+    background-color: var(--bg_light-braun);
+    color: var(--text_light);
+    padding: 90px 16px;
+}
+
+#aboutUs .left {
+    text-align: center;
+}
+
+#aboutUs .left p {
+    max-width: 508px;
+    margin: 20px auto;
+}
+
+#aboutUs .right {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#aboutUs .right img {
+    width: 100%;
+    max-width: 442px;
+    margin: 40px auto -340px auto;
+    border-radius: 10px;
+}
+
+
+/* --------- services --------- */
+#services {
+    text-align: center;
+    margin: 320px auto 40px auto;
+    padding: 0 16px;
+}
+
+#services .cardsSwiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#services .cardsSwiper .swiper-wrapper .swiper-slide .card {
+    max-width: 385px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 40px auto;
+    border: 1px solid var(--bg_light-braun);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#services .cardsSwiper .swiper-wrapper .swiper-slide .card h3 {
+    margin: 30px 16px 0 16px;
+}
+
+#services .cardsSwiper .swiper-wrapper .swiper-slide .card p {
+    padding: 10px 16px 30px 16px;
+    color: var(--text_dark);
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+
+/* --------- testimonials --------- */
+
+#testimonials {
+    max-width: 1903px;
+    margin: 0 auto;
+    background-image: url(/assets/img/testimonials_tasty-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 90px 0;
+}
+
+#testimonials .name {
+    color: var(--text_light);
+}
+
+#testimonials .conteiner {
+    max-width: 1232px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#testimonials .conteiner .item {
+    max-width: 512px;
+    background-color: var(--bg_light);
+    text-align: start;
+    padding: 20px 30px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+#testimonials .conteiner .item p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: var(--text_dark);
+    margin: 10px 0 20px 0;
+}
+
+
+/* --------- contacts --------- */
+
+#contacts {
+    text-align: center;
+    padding: 50px 16px;
+}
+
+#contacts .content .form-block form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts .content .form-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+#contacts .content .form-block input {
+    min-width: 340px;
+    max-width: 374px;
+    height: 56px;
+    border-radius: 61px;
+    background-color: var(--bg_input);
+    border: 0;
+    margin: 7px 0;
+    padding: 0 20px;
+}
+
+#contacts .content .form-block .button {
+    margin: 40px 0;
+}
+
+#contacts .content .info {
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+#contacts .content .info .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#contacts .content .info .icon p {
+    margin: 15px 0 15px 20px;
+    color: var(--text_dark);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* --------- footer --------- */
+#footer {
+    height: 100px;
+    background-color: var(--bg_dark-braun);
+}
+
+
+
+
+
+/*================  @media  ================*/
+
+/*------------------------------------------*/
+@media (min-width: 768px) {
+    #intro .container .linksSwiper {
+        flex-direction: row;
+    }
+}
+
+
+
+/*------------------------------------------*/
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 7rem;
+        line-height: 8rem;
+        display: inline;
+    }
+
+    /* --------- intro --------- */
+    #intro {
+        max-width: 1903px;
+        background: url(/assets/img/intro_tasty-bg_desk.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        margin: 0 auto;
+        text-align: center;
+        padding: 26px 16px 26px 26px;
+    }
+
+    #intro .logo {
+        text-align: start;
+        max-width: 1232px;
+        margin: 0 auto;
+    }
+
+    #intro .logo img {
+        width: 248px;
+        margin: 0 auto 100px auto;
+    }
+
+    #intro .container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: start;
+        max-width: 1232px;
+        margin: 0 auto;
+    }
+
+    #intro .container .text {
+        align-items: start;
+    }
+
+    #intro .container .text .linksSwiper {
+        flex-direction: row;
+        align-items: end;
+        justify-content: start;
+        margin: 20px 0 40px 0;
+    }
+
+    #intro .container .text .linksSwiper .swiper-wrapper .swiper-slide:nth-child(5),
+    #intro .container .text .linksSwiper .swiper-wrapper .swiper-slide:nth-child(6),
+    #intro .container .text .linksSwiper .swiper-wrapper .swiper-slide:nth-child(7),
+    #intro .container .text .linksSwiper .swiper-wrapper .swiper-slide:nth-child(8) {
+        display: unset;
+    }
+
+    #intro .container .text .linksSwiper .swiper-wrapper {
+        align-items: end;
+        flex-direction: column;
+        width: 32px !important;
+        height: 165px;
+    }
+
+    #intro .container .text .linksSwiper .swiper-wrapper .swiper-slide {
+        width: 32px !important;
+        height: 32px !important;
+        margin: 0px 0px 0px 0px;
+        color: var(--text_light);
+        background-color: var(--text_light);
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+
+    #intro .container .text .linksSwiper .phone p {
+        max-width: 552px;
+        margin: 0px 0px 0px 16px;
+    }
+
+
+    /* --------- aboutUs --------- */
+
+    #aboutUs {
+        max-width: 1903px;
+        margin: 0 auto;
+        background-color: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutUs .cont {
+        max-width: 1216px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #aboutUs .left {
+        width: 890px;
+        background-color: var(--bg_light-braun);
+        padding: 50px 16px;
+        text-align: start;
+        margin: 0 -280px 0 0;
+    }
+
+    #aboutUs .left p {
+        max-width: 508px;
+        margin: 50px 0;
+    }
+
+    #aboutUs .right img {
+        max-width: 580px;
+        margin: 0 0px 0 0;
+        position: relative;
+        z-index: 10;
+    }
+
+
+    /* --------- services --------- */
+    #services {
+        text-align: center;
+        margin: 0 auto 40px auto;
+        padding: 0 16px;
+    }
+
+
+
+    /* --------- contacts --------- */
+    #contacts .content {
+        max-width: 820px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px auto;
+    }
+
+    #contacts .content .form-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #contacts .content .form-block .button {
+        margin: 40px 0 0 0;
+    }
+
+    #contacts .content .info {
+        max-width: unset;
+        margin: 0 0 40px 0;
+    }
+
+    #contacts .content .info .icon {
+        justify-content: start;
+    }
+
+}
+
+
+
+
+/*------------------------------------------*/
+@media (min-width: 1903px) {
+    h1 {
+        font-size: 4.7rem;
+        line-height: 5.6rem;
+        display: inline;
+    }
+
+    h2 {
+        font-size: 9rem;
+        line-height: 8.6rem;
+    }
+
+
+    /* --------- intro --------- */
+    #intro {
+        max-width: 1903px;
+        background: url(/assets/img/intro_bg-desk.png);
+        padding: 26px 16px 0 26px;
+    }
+
+    #intro .logo img {
+        margin: 0 auto 160px auto;
+    }
+
+    #intro .container .text p {
+        max-width: 575px;
+    }
+
+    #intro .container .text .linksSwiper {
+        margin: 20px 0 20px 60px;
+    }
+
+    #intro .container .text .linksSwiper .phone p {
+        margin: 0px 0px 0px 35px;
+    }
+
+
+    /* --------- hoWWeWork --------- */
+
+    #hoWWeWork {
+        max-width: 1903px;
+        background-image: url(/assets/img/how-work_bg_desk.png);
+        background-size: contain;
+        padding: 70px 16px 0 16px;
+        margin: -1px auto -15px auto
+    }
+
+    #hoWWeWork .text {
+        max-width: 1232px;
+        margin: 0 auto 50px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    #hoWWeWork .text h2 {
+        display: block;
+        color: var(--text_light);
+        text-align: end;
+        width: 630px;
+        order: 2;
+    }
+
+    #hoWWeWork .text p {
+        margin: 0 0 0 0;
+        order: 1;
+    }
+
+    #hoWWeWork .imageSwiper {
+        max-width: 1264px;
+        margin: 0 auto;
+    }
+
+
+
+    /* --------- aboutUs --------- */
+    #aboutUs {
+        justify-content: start;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #aboutUs .cont {
+        max-width: 1903px;
+        margin: 0;
+        justify-content: start;
+    }
+
+    #aboutUs .left {
+        padding: 60px 0 50px 352px;
+        width: 1214px;
+    }
+
+    #aboutUs .left h2 {
+        display: block;
+        max-width: 508px;
+    }
+
+    #aboutUs .right img {
+        max-width: 642px;
+        margin: 10px 0px 0 0;
+    }
+
+
+    /* --------- services --------- */
+    #services {
+        max-width: 1232px;
+        margin: 52px auto 50px auto;
+    }
+
+
+    /* --------- testimonials --------- */
+
+    #testimonials {
+        padding: 50px 0;
+    }
+}
+/*=================================================*/
