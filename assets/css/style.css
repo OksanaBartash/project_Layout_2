@@ -201,7 +201,7 @@ li {
 /* --------- hoWWeWork --------- */
 
 #hoWWeWork {
-    background-image: url(/assets/img/how-work_tasty-bg_left.png);
+    background-image: url(../img/how-work_tasty-bg_left.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 90px 16px;
@@ -291,7 +291,7 @@ li {
 #testimonials {
     max-width: 1903px;
     margin: 0 auto;
-    background-image: url(/assets/img/testimonials_tasty-bg.png);
+    background-image: url(../img/testimonials_tasty-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -418,7 +418,7 @@ li {
     /* --------- intro --------- */
     #intro {
         max-width: 1903px;
-        background: url(/assets/img/intro_tasty-bg_desk.png);
+        background: url(../img/intro_tasty-bg_desk.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -589,7 +589,7 @@ li {
     /* --------- intro --------- */
     #intro {
         max-width: 1903px;
-        background: url(/assets/img/intro_bg-desk.png);
+        background: url(../img/intro_bg-desk.png);
         padding: 26px 16px 0 26px;
     }
 
@@ -614,7 +614,7 @@ li {
 
     #hoWWeWork {
         max-width: 1903px;
-        background-image: url(/assets/img/how-work_bg_desk.png);
+        background-image: url(../img/how-work_bg_desk.png);
         background-size: contain;
         padding: 70px 16px 0 16px;
         margin: -1px auto -15px auto
@@ -690,4 +690,5 @@ li {
         padding: 50px 0;
     }
 }
+
 /*=================================================*/
