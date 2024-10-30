@@ -2,10 +2,12 @@ Project Layout #2
 
 Link: https://oksanabartash.github.io/project_Layout_2/
 
-This is a future website that offers services to cline our planet. 
-I made it myself. During my work on this project, I used HTML, CSS, JavaScript, Swiper and Git repository. 
-In this project icons were connected as a font using icomoon.
-I also utilized Figma for the layout. 
-I implemented Swiper@11 libraries, converted, and compressed all images for optimal website performance.
+Responsive and User-Friendly Landing Page for a Bakery
 
-The layout of the blocks is adaptive, ranging from the mobile version to the desktop version, ensuring correct display on tablets and other devices with adaptive adjustments for images, buttons, and text.
+This is a prototype website designed to provide services for a bakery-confectionery that brings more brightness and flavor to life. I developed it independently using HTML, CSS, JavaScript, Swiper, and Git for version control. The site structure was also created based on a model from Figma.
+
+I implemented Swiper@11 libraries and optimized all images by converting and compressing them for enhanced website performance.
+
+The block structure is fully responsive, adapting seamlessly from mobile to desktop versions to ensure correct display on tablets and other devices, with adjustments to images, buttons, and text.
+
+The project took approximately 15 hours to complete.
